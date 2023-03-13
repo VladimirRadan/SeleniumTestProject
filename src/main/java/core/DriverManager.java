@@ -2,8 +2,10 @@ package core;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import utils.Utils;
 
 public class DriverManager {
@@ -15,7 +17,7 @@ public class DriverManager {
 
     public static WebDriver getDriver(){
         if (browser.equalsIgnoreCase("chrome")){
-            driver = new ChromeDriver();
+            driver = new ChromeDriver(OptionManager.chromeOptions());
         } else if (browser.equalsIgnoreCase("firefox")) {
             driver = new FirefoxDriver();
         } else if (browser.equalsIgnoreCase("edge")) {

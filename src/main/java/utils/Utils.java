@@ -1,6 +1,7 @@
 package utils;
 
 import io.github.cdimascio.dotenv.Dotenv;
+import org.testng.annotations.DataProvider;
 
 public class Utils {
 
@@ -18,6 +19,20 @@ public class Utils {
                 .ignoreIfMissing()
                 .load();
     }
+
+    @DataProvider(name = "dpLoginTest")
+    public static Object[][] dpLoginTest(){
+       return new Object[][]{
+               {"", ""},
+               {"tomsmith", ""},
+               {"", "SuperSecretPassword!"},
+               {"Username", "Password"},
+               {"admin", "admin"},
+               {"!%^&%#&", "3424134231413243"}
+       };
+    }
+
+
 
 
 }

@@ -8,6 +8,7 @@
         <classes>
             <class name="tests.RegisterTest"></class>
             <class name="tests.LoginTest"></class>
+            <class name="tests.LoginHerokuTest"></class>
         </classes>
     </test>
 <!--        <test name="Firefox test">-->

@@ -100,7 +100,7 @@ public class RegisterPage extends BasePage{
     @Step("Verifying user is successfully registered")
     public boolean isUserRegistered(){
         return matchesExpectedText(myAccountPageTitle, "My account") &&
-                matchesExpectedText(myAccountMenuProfile, "Profile");
+                matchesExpectedText(myAccountMenuProfile, " Profile");
     }
 
     public String getUsername() {
