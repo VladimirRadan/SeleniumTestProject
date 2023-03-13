@@ -5,10 +5,10 @@
 4. Zavrsiti kupovinu proizvoda, platiti proizvode i verifikovati uspesnost kupovine
 
 #Login
-1. Uraditi negativne testove za login. Jedan test treba da procita sve kredencijale iz json fajla
+1. Uraditi negativne testove za login. Jedan test treba da procita sve kredencijale preko dataProvidera
 
 #Kategorije
-1. Iz header-menu izabrati katrgoriju Power Tools
+1. Iz header-menu izabrati kategoriju Power Tools
 2. Odabrati check-box Drill
 3. Verifikovati da je broj proizvoda na stranici manji od broja proizvoda pre filtriranja
 
